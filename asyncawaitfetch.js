@@ -1,6 +1,6 @@
 const posts = [
   { title: "Post One", body: "This is Post one" },
-  { title: "Post Two", body: "This is Post two" },
+  { title: "Post two", body: "This is Post two" },
 ];
 function getPosts() {
   setTimeout(() => {
@@ -25,14 +25,7 @@ function createPost(post) {
   });
 }
 fetchUsers();
-//   createPost({ title: "Post Three", body: "This is Post three" })
-//     .then(getPosts)
-//     .catch((err) => console.log(err));
-// async function init() {
-//   await createPost({ title: "Post Three", body: "This is Post three" });
-//   getPosts();
-// }
-// init();
+
 async function fetchUsers() {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
